@@ -1,0 +1,385 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+/*===========================================================
+For Header (Navbar) 
+=============================================================
+*/
+.header {
+  position: sticky;
+  top: 0;
+  font-size: 1.08rem;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  border-bottom: 1px solid white;
+  color: white;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+.logo{
+  width: 7vw;
+}
+.navbar{
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*=======================================================================================
+Navigation Bar's left side part which contains logo and buttons of Home, About & Library.
+=========================================================================================
+*/
+.leftPart{
+  display: flex;
+  align-items: center;
+}
+.navbar-leftSideList{
+  display: flex;
+}
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li a{
+  text-decoration: none;
+  color: white;
+}
+.navbar-leftSideList li:nth-child(1) {
+  width: 9.5vw;
+  margin-left: 2vw;
+}
+.navbar .home {
+  color: #1ad2fb;
+}
+.navbar-leftSideList li:nth-child(2) , .navbar-leftSideList li:nth-child(3){
+  width: 11vw;
+}
+
+.libraryHoverContent {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 15vw;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  display: none;
+}
+.libraryHoverContent a {
+  margin-left: 4px;
+  display: grid;
+  align-items: center;
+  font-weight: 100;
+  font-size: 18px;
+  color: white;
+}
+.one {
+  height: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.514);
+}
+.library span i {
+margin-left: 1.5px;
+font-size: small;
+}
+.myProfile{
+  display: none;
+}
+
+/*=======================================================================================
+Navigation Bar's right side part which contains Search bar and user image 
+=========================================================================================
+*/
+.rightPart{
+  display: flex;
+  align-items: center;
+}
+.navbar-rightSideList {
+  display: flex;
+}
+.search {
+  width: 55%;
+  height: 5vh;
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5vw 0 0.7vw;
+  font-size: 1rem;
+}
+.searchButton {
+  width: 5.8vw;
+  height: 8vh;
+  margin-top: 1vh;
+  margin-left: -4.7vw;
+  background: none;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.498);
+}
+.login {
+  margin: 2vh 1vw 1.8vh -3.5vw;
+}
+
+.user {
+  border-radius: 50%;
+}
+.user img {
+  display: flex;
+  width: 3vw;
+  height: 6vh;
+  border-radius: 100%;
+}
+
+/*=============================
+Responsive Navbar for Mobile
+===============================
+*/
+.mobile-navbar-btn{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+/*
+============================================
+Main Section
+============================================
+*/
+.main {
+  background-color: rgba(0, 0, 0, 0.96);
+  color: white;
+}
+ .trendingSongs , .mostPlayedPodcast , .playlist {
+  border: none;
+}
+
+/*========================================
+Heading before images and see all button
+==========================================
+*/
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 6vh 3vw 3vh 3vw;
+}
+.heading .leftSideText {
+  font-size: 1.4rem;
+  font-weight: 1000;
+}
+.heading button {
+  background: none;
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+  height: 4.5vh;
+  width: 6vw;
+  border-radius: 15px;
+  font-weight: 800;
+  border: none;
+}
+.heading button a {
+  color: white;
+  text-decoration: none;
+}
+
+/*===============================================
+Images and their content for songs and playlists
+=================================================
+*/
+.images {
+  display: flex;
+}
+
+.first {
+  padding-left: 3vw;
+}
+.poster img,
+.first img {
+  width: 160px;
+  border-radius: 22px;
+  padding-bottom: 1vh;
+}
+.poster {
+  margin-left: 30px;
+}
+
+.firstLine p {
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+.secondLine p {
+  padding-top: 0.5vh;
+  font-weight: 100;
+  font-size: 0.75rem;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(128, 128, 128, 0.863);
+}
+
+.rainingHits .secondLine {
+  padding-bottom: 50px;
+}
+.images a button {
+  border: none;
+  background: rgba(128, 128, 128, 0.733);
+  color: white;
+  border-radius: 100%;
+  transform: translate(62.5px, -122.5px);
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+/*=============================
+Hover Effects
+===============================
+*/
+.first:hover .button,
+.poster:hover .button {
+  display: block;
+}
+.first:hover .firstLine,
+.poster:hover .firstLine {
+  margin-top: -50px;
+}
+
+.first:hover .forOpacity,
+.poster:hover .forOpacity {
+  opacity: 0.5;
+}
+
+.library:hover .libraryHoverContent {
+  display: block;
+  position: absolute;
+}
+
+.podcast:hover,
+.library:hover .libraryContent {
+  color: #1ad2fb;
+}
+
+.playlist .first img , .playlist .poster img {
+  width: 190px;
+}
+
+/*=============================
+Media Queries
+===============================
+*/
+@media (max-width : 1040px) {
+
+  *{
+    font-size: 1rem;
+  }
+  .main{
+    overflow-x: hidden;
+  }
+
+  .mobile-navbar-btn{
+      display: block;
+      z-index: 999;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+  }
+  .header .logo{
+      display: flex;
+      justify-content: center;
+      width: 20vw;
+  }
+
+  .navbar .home{
+      color: white;
+  }
+  .navbar-leftSideList li:nth-child(1) {
+      margin-left: 0vw;
+      margin-top: 6px;
+  }
+  .navbar-leftSideList{
+      width: 120px;
+      height: 140px;
+      background-color: rgba(255, 255, 255, 0.45);
+      border-radius: 5px;
+      backdrop-filter: blur(5px);
+      display: grid;
+      position: absolute;
+      top: 6.5vh;
+      right: 0px;
+      font-size: 15px;
+      opacity: 0;
+  }
+
+  .navbar-leftSideList li{
+      /* text-align: center; */
+      padding-left: 5px;
+  }
+  .navbar-leftSideList i{
+      display: none;
+  }
+
+  .navbar-rightSideList{
+      display: none;
+  }
+  .podcast:hover,
+  .library:hover .libraryContent {
+    color: white;
+  }
+  .libraryHoverContent{
+      opacity: 0;
+  }
+  .myProfile{
+      display: block;
+  }
+
+  .poster img,
+.first img {
+  width: 100px;
+}
+.secondLine{
+  display: none;
+}
+.images a button {
+  border: none;
+  background: rgba(128, 128, 128, 0.733);
+  color: white;
+  border-radius: 100%;
+  transform: translate(37.5px, -72.5px);
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.first:hover .firstLine,
+.poster:hover .firstLine {
+  margin-top: -30px;
+}
+}
+
+@media (max-width : 720px) {
+
+  .main{
+    overflow-x: hidden;
+  }
+
+.header .logo{
+  display: flex;
+  justify-content: center;
+  width: 38vw;
+}
+}
+
+.active .navbar-leftSideList{
+    opacity: 1;
+}
+
+/*=============================
+For Trending Playlist Html file
+===============================
+*/
+.playlist{
+  padding-bottom: 5vh;
+}

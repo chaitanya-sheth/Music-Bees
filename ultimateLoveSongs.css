@@ -1,0 +1,120 @@
+.rightside-content{
+    margin-top: 8vh;
+    font-family: 'Roboto', sans-serif;
+    /* margin-top: 3vh; */
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 1.2vh;
+}
+
+.main{
+    /* min-height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.sub-content{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 1.2vh;
+}
+
+.sub-line {
+    margin-bottom: 3vh;
+}
+
+/* .icons a button{
+    background: none;
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    border-radius: 100%;
+    color: white;
+}
+.icons a{
+    margin-right: 2vw;
+} */
+.top{
+    display: flex;
+    padding: 25px;
+}
+.ultimateLoveSong-Image{
+    padding-right: 2vw;
+}
+
+.songItemContainer{
+    padding-top: 5vh;
+    
+}
+.songItem{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+.songNumber{
+    width: 5vw;
+    text-align: right;
+}
+.songImage{
+    display: flex;
+    margin-left: 2vw;
+    width: 40vw;
+}
+.songImageContent{
+    margin: 2vh;
+    font-size: 0.85rem;
+    font-family: 'Roboto', sans-serif;
+}
+.songImageContent p{
+    font-size: .8rem;
+    color: rgba(128, 128, 128, 0.863);
+}
+.movieName{
+    width: 40vw;
+    text-align: center;
+}
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 14vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 25px;
+}
+#bottomImage{
+    width: 35px;
+}
+
+
